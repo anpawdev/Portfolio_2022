@@ -1,0 +1,35 @@
+html {
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: $mainfont;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  line-height: 1.943;
+  color: $text;
+  background: $body;
+  -webkit-overflow-scrolling: touch;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: $pink;
+}
+
+::selection {
+  background-color: $pink;
+  color: $white;
+}
+
+::-moz-selection {
+  background-color: $pink;
+  color: $white;
+}
