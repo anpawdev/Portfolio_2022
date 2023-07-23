@@ -11,6 +11,10 @@
   margin: 0;
   border-radius: 0;
 
+  @include media-breakpoint-down(md) {
+    padding: 2.7rem 0;
+  }
+
   &-bg {
     content: "";
     position: absolute;
