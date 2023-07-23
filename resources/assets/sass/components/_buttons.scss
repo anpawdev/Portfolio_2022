@@ -1,0 +1,19 @@
+.btn {
+  color: $white;
+  letter-spacing: 0.025em;
+  font-size: 1rem;
+  display: inline-block;
+  border: 0;
+  border-radius: 0;
+  padding: 1.1em 2.28em 1em;
+  background-color: $pink;
+  text-decoration: none;
+  transition: all 0.3s ease-out !important;
+
+  &:is(:hover, :focus) {
+    background-color: $lightpink;
+    color: $white;
+    box-shadow: none;
+    outline: none !important;
+  }
+}

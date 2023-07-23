@@ -1,0 +1,13 @@
+.icon-specialization {
+  color: $pink;
+
+  @include fontSize(80);
+}
+
+.row-specialization {
+  margin: 0 -2rem;
+}
+
+.col-specialization {
+  padding: 0 2rem;
+}

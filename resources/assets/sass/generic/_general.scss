@@ -33,3 +33,35 @@ body {
   background-color: $pink;
   color: $white;
 }
+
+.text-muted {
+  color: $grey !important;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-primary {
+  color: $pink !important;
+}
+
+.masked {
+  position: relative;
+
+  &::before,
+  &-03::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: $black;
+    opacity: 0.1;
+  }
+
+  &-03::before {
+    opacity: 0.3;
+  }
+}

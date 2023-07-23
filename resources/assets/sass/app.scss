@@ -29,6 +29,18 @@
 
 // Components
 // =================================================
-@import "components/base";
+@import "components/buttons";
 @import "components/animations";
 @import "components/overlay";
+@import "components/navbar";
+@import "components/sidebar";
+@import "components/animate";
+@import "components/loading";
+@import "components/base";
+@import "components/style";
+
+// Sections
+// =================================================
+@import "sections/hero";
+@import "sections/about";
+@import "sections/specialization";
