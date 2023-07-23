@@ -2,7 +2,7 @@
   position: absolute;
   display: block;
   z-index: 101;
-  left: 0;
+  right: 0;
   top: 0;
   width: 100%;
   padding-top: 2rem;
@@ -39,7 +39,6 @@
   }
 
   &-toggle {
-    float: right;
     display: block;
     margin: 0;
     padding: 0;
@@ -72,11 +71,9 @@
 
   .social-list {
     overflow: hidden;
-    float: right;
     margin-right: 10%;
 
     &-bottom {
-      display: none;
       position: absolute;
       z-index: 10;
       right: 0;
@@ -85,7 +82,6 @@
     }
 
     a {
-      float: left;
       line-height: 1;
       color: $white;
       margin-left: 2rem;
@@ -104,7 +100,6 @@
   }
 
   &-spacer {
-    float: right;
     margin: -1rem 4.5rem 0;
     width: 1px;
     height: 3.3rem;
@@ -112,14 +107,12 @@
   }
 
   &-address {
-    float: right;
     font-weight: 600;
     text-transform: uppercase;
   }
 }
 
 .contacts {
-  float: left;
   margin-left: 9rem;
   margin-top: 0.5rem;
 

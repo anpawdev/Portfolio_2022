@@ -9,6 +9,8 @@
   <title>{% block title %}{% endblock %}</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js">
   <link rel="stylesheet" href="css/app.css">
 </head>
 
@@ -48,8 +50,12 @@
       </ul>
       <div class="menu-footer right-boxed">
         <div class="social-list">
-          <a href="" class="icon ion-social-github"></a>
-          <a href="" class="icon ion-social-linkedin"></a>
+          <a href="" class="icon ion-social-linkedin">
+            <img src="images/icons/linkedin-icon.svg" alt="linkedin">
+          </a>
+          <a href="" class="icon ion-social-github">
+            <img src="images/icons/github-icon.svg" alt="github">
+          </a>
         </div>
         <div class="copy">© AP 2023. All Rights Reseverd</div>
       </div>
@@ -57,15 +63,8 @@
 
     <div class="copy-bottom white boxed">© AP 2023.</div>
 
-    <div class="social-list social-list-bottom boxed">
-
-      <a href="" class="icon ion-social-linkedin"></a>
-
-      <a href="" class="icon ion-social-github"></a>
-
-    </div>
     <!-- Navbar -->
-    <div class="pagepiling">
+    <div id="fullpage" class="pagepiling">
       {% block content %}{% endblock %}
     </div>
 

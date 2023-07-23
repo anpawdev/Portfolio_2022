@@ -283,16 +283,18 @@
 }
 
 .display-1 {
-  font-size: 4.28rem;
   line-height: 1;
   letter-spacing: -0.05em;
   margin: 0;
+
+  @include fontSize(64);
 }
 
 .display-2 {
-  font-size: 6.54rem;
   font-weight: 600;
   line-height: 1;
   letter-spacing: -0.05em;
   margin: 0;
+
+  @include fontSize(104);
 }
