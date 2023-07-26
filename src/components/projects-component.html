@@ -1,119 +1,67 @@
-<div id="section5" data-anchor="page5" class="pp-scrollable text-white section section-5">
-
+<div id="section5" data-anchor="page5" class="pp-scrollable title-white section section-5">
   <div class="scroll-wrap">
-
     <div class="bg-changer">
-
       <div class="section-bg" style="background-image:url(images/bg/project1.jpg);"></div>
-
       <div class="section-bg" style="background-image:url(images/bg/project2.jpg);"></div>
-
       <div class="section-bg" style="background-image:url(images/bg/project3.jpg);"></div>
-
       <div class="section-bg" style="background-image:url(images/bg/project4.jpg);"></div>
-
     </div>
-
     <div class="scrollable-content">
-
       <div class="vertical-title  d-none d-lg-block"><span>projekty</span></div>
-
       <div class="vertical-centred">
-
         <div class="boxed boxed-inner">
-
           <div class="boxed">
-
             <div class="container">
-
               <div class="intro">
-
                 <div class="row">
-
                   <div class="col-md-12">
-
-                    <div class="project-row">
-
-                      <a class="active" href="project-detail.html">
-
-                        <span class="project-number">01</span>
-
-                        <h2 class="project-title">Abstract Skat</h2>
-
-                        <div class="project-category">Illustration</div>
-
-                      </a>
-
-                    </div>
-
-                    <div class="project-row">
-
-                      <a href="project-detail.html">
-
-                        <span class="project-number">02</span>
-
-                        <h2 class="project-title">Borato Prism</h2>
-
-                        <div class="project-category">Branding</div>
-
-                      </a>
-
-                    </div>
-
-                    <div class="project-row">
-
-                      <a href="project-detail.html">
-
-                        <span class="project-number">03</span>
-
-                        <h2 class="project-title">Brole Mobile App</h2>
-
-                        <div class="project-category">Mobile Design</div>
-
-                      </a>
-
-                    </div>
-
-                    <div class="project-row">
-
-                      <a href="project-detail.html">
-
-                        <span class="project-number">04</span>
-
-                        <h2 class="project-title">Bauhaus Studio</h2>
-
-                        <div class="project-category">House Design</div>
-
-                      </a>
-
-                    </div>
-
+                    {% set projects = [
+                      {
+                        id: '01',
+                        title: 'Strona WP - dotacje ',
+                        technology: 'HTML, SCSS, JavaScript, PHP'
+                      },
+                      {
+                        id: '02',
+                        title: 'Blog - Wordpress',
+                        technology: 'JavaScript, PHP, ACF Pro, CPT'
+                      },
+                      {
+                        id: '03',
+                        title: 'Planer dzienny',
+                        technology: 'React.js, Redux, Styled-components'
+                      },
+                      {
+                        id: '04',
+                        title: 'Sklep - projekt grupowy',
+                        technology: 'HTML, SCSS, JavaScript'
+                      }
+                    ]
+                    %}
+                    {% for project in projects %}
+                      {% set id = project.id %}
+                      {% set title = project.title %}
+                      {% set technology = project.technology %}
+                      <div class="project-row">
+                        <a href="project-detail.html">
+                          <span class="project-number">{{id}}</span>
+                          <h2 class="project-title">{{title}}</h2>
+                          <div class="project-technology">{{technology}}</div>
+                        </a>
+                      </div>
+                    {% endfor %}          
                     <div class="view-all view-all-projects">
-
                       <a href="projects.html">
-
                         Zobacz wszystkie projekty
-
                       </a>
-
                     </div>
-
                   </div>
-
                 </div>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
-
   </div>
-
 </div>

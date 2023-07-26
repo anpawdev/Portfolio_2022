@@ -1,4 +1,4 @@
-<div id="section4" data-anchor="page4" class="pp-scrollable section section-6">
+<div src="section4" data-anchor="page4" class="pp-scrollable section section-6">
     <div class="scroll-wrap">
         <div class="scrollable-content">
             <div class="vertical-title text-white d-none d-lg-block"><span>technologie</span></div>
@@ -8,43 +8,45 @@
                         <div class="container">
                             <div class="intro">
                                 <h2 class="title text-white"><span class="text-primary">Znajomość </span>technologii</h2>
-                                <div class="row row-techs">
-                                    <div class="col-sm-6 col-md-4 col-xl-3 col-tech">
-                                        <div class="tech-inner"><img alt="" src="images/techs/1.png"></div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-xl-3 col-tech">
-                                        <div class="tech-inner"><img alt="" src="images/techs/2.png"></div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-xl-3 col-tech">
-                                        <div class="tech-inner"><img alt="" src="images/techs/3.png"></div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-xl-3 col-tech">
-                                        <div class="tech-inner"><img alt="" src="images/techs/4.png"></div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-xl-3 col-tech">
-                                        <div class="tech-inner"><img alt="" src="images/techs/5.png"></div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-xl-3 col-tech">
-                                        <div class="tech-inner"><img alt="" src="images/techs/6.png"></div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-xl-3 col-tech">
-                                        <div class="tech-inner"><img alt="" src="images/techs/7.png"></div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-xl-3 col-tech">
-                                        <div class="tech-inner"><img alt="" src="images/techs/8.png"></div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-xl-3 col-tech">
-                                        <div class="tech-inner"><img alt="" src="images/techs/9.png"></div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-xl-3 col-tech">
-                                        <div class="tech-inner"><img alt="" src="images/techs/10.png"></div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-xl-3 col-tech">
-                                        <div class="tech-inner"><img alt="" src="images/techs/11.png"></div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 col-xl-3 col-tech">
-                                        <div class="tech-inner"><img alt="" src="images/techs/12.png"></div>
-                                    </div>
+                                <div class="row align-items-center row-techs">
+                                    {% set images = [
+                                        {
+                                          src: '../images/icons/html.svg'
+                                        },
+                                        {
+                                          src: '../images/icons/css.svg'
+                                        },
+                                        {
+                                          src: '../images/icons/sass.svg'
+                                        },
+                                        {
+                                          src: '../images/icons/bootstrap.svg'
+                                        },
+                                        {
+                                          src: '../images/icons/tailwind.svg'
+                                        },
+                                        {
+                                          src: '../images/icons/js.svg'
+                                        },
+                                        {
+                                          src: '../images/icons/jquery.svg'
+                                        },
+                                        {
+                                          src: '../images/icons/wp.svg'
+                                        },
+                                        {
+                                          src: '../images/icons/php.svg'
+                                        }
+                                      ]
+                                      %}
+                                      {% for image in images %}
+                                        {% set src = image.src %}
+                                        <div class="col-sm-6 col-md-4 col-xl-3 col-tech mb-5">
+                                            <div class="tech-inner">
+                                                <img alt="tech-logo" src="{{src}}">
+                                            </div>
+                                        </div>
+                                      {% endfor %} 
                                 </div>
                             </div>
                         </div>
