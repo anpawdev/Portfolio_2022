@@ -180,3 +180,40 @@
   opacity: 0;
   transition-delay: 0s;
 }
+
+.fp-right {
+  position: absolute;
+  right: 4rem;
+  top: 40%;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    span {
+      color: transparent;
+    }
+
+    .fp-tooltip,
+    .fp-sr-only {
+      display: none;
+    }
+
+    li a {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $white;
+      display: block;
+    }
+
+    li {
+      margin: 1.8rem auto;
+    }
+
+    a.active {
+      background-color: $pink;
+      transform: scale(1.6);
+    }
+  }
+}

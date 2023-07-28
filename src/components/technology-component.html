@@ -36,13 +36,16 @@
                                         },
                                         {
                                           src: '../images/icons/php.svg'
+                                        },
+                                        {
+                                          src: '../images/icons/git.svg'
                                         }
                                       ]
                                       %}
                                       {% for image in images %}
                                         {% set src = image.src %}
                                         <div class="col-sm-6 col-md-4 col-xl-3 col-tech mb-5">
-                                            <div class="tech-inner">
+                                            <div class="tech-inner d-flex justify-content-center align-items-center">
                                                 <img alt="tech-logo" src="{{src}}">
                                             </div>
                                         </div>
