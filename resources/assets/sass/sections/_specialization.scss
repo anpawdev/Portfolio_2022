@@ -1,11 +1,20 @@
 .section-2 {
-  background-color: $white !important;
-}
+  background-color: #f7f6f6 !important;
 
-.icon-specialization {
-  color: $pink;
+  h2,
+  h4,
+  a,
+  p {
+    color: $text !important;
+  }
 
-  @include fontSize(80);
+  a:hover {
+    color: $pink !important;
+  }
+
+  .view-all a::before {
+    background: $text;
+  }
 }
 
 .row-specialization {
