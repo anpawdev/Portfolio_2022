@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>{% block title %}{% endblock %}</title> 
+
+<!-- Styles -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="animsition">  
+    <!-- <div class="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div> -->
+
+    <!-- Content CLick Capture-->
+
+    <div class="click-capture"></div>
+
+    <!-- Sidebar Menu-->
+
+    {% include 'components/sidebar-menu.html' %}
+
+    <!-- Header -->
+
+    {% include 'components/header.html' %}
+
+    <div class="content">
+      <div class="container">
+        <div class="row row-project">
+          <div class="col-project-name col-md-6 mt-5 mb-5 mb-md-0">
+            <h1></h1>
+            <div class="social-list social-list-detail">
+              <a href="" class="icon icon-social-website"></a>
+              <a href="" class="icon icon-social-github"></a>
+            </div>
+          </div>
+          <div class="col-project-info col-md-6">
+            <div class="row">
+              <div class="col-md-6 mt-5">
+                <h5>Technologie</h5>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img alt="" class="image-holder" src="">
+      <div class="container">
+        <p class="project-detail-text text-center"></p>
+        <img alt="" class="image-holder" src="">
+        <img alt="" class="image-holder" src="">
+        <p class="project-detail-text text-center"></p>
+       </div>
+      </div>
+  </div>
+
+<!-- Scripts -->
+<script src="js/app.js"></script>
+</body>
+</html>

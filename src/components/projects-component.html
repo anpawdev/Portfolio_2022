@@ -19,7 +19,8 @@
                       {
                         id: '01',
                         title: 'Strona WP - dotacje ',
-                        technology: 'HTML, SCSS, JavaScript, PHP'
+                        technology: 'HTML, SCSS, JavaScript, PHP',
+                        link: 'single-project-1.html'
                       },
                       {
                         id: '02',
@@ -41,9 +42,10 @@
                     {% for project in projects %}
                       {% set id = project.id %}
                       {% set title = project.title %}
+                      {% set link = project.link %}
                       {% set technology = project.technology %}
                       <div class="project-row">
-                        <a href="project-detail.html">
+                        <a href="{{link}}">
                           <span class="project-number">{{id}}</span>
                           <h2 class="project-title">{{title}}</h2>
                           <div class="project-technology">{{technology}}</div>

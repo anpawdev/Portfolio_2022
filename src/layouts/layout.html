@@ -29,41 +29,11 @@
 
     <!-- Sidebar Menu-->
 
-    <div class="menu">
-      <span class="close-menu icon-cross2 right-boxed"></span>
-      <ul class="menu-list right-boxed">
-        <li data-menuanchor="page1">
-          <a href="#page1">Strona główna</a>
-        </li>
-        <li data-menuanchor="page2">
-          <a href="#page2">Specjalizacje</a>
-        </li>
-        <li data-menuanchor="page3">
-          <a href="#page3">O mnie</a>
-        </li>
-        <li data-menuanchor="page4">
-          <a href="#page4">Technologie</a>
-        </li>
-        <li data-menuanchor="page5">
-          <a href="#page5">Projekty</a>
-        </li>
-      </ul>
-      <div class="menu-footer right-boxed">
-        <div class="social-list">
-          <a href="" class="icon ion-social-linkedin">
-            <img src="images/icons/linkedin-icon.svg" alt="linkedin">
-          </a>
-          <a href="" class="icon ion-social-github">
-            <img src="images/icons/github-icon.svg" alt="github">
-          </a>
-        </div>
-        <div class="copy">© AP 2023. All Rights Reseverd</div>
-      </div>
-    </div>
+    {% include 'components/sidebar-menu.html' %}
 
     <div class="copy-bottom white boxed">© AP 2023.</div>
 
-    <!-- Navbar -->
+    <!-- Header-->
     <div id="fullpage" class="pagepiling">
       {% block content %}{% endblock %}
     </div>
