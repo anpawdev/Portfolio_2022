@@ -1,5 +1,5 @@
 .boxed {
-  padding: 0 1.7rem;
+  padding: 1rem 1.7rem;
 
   @include media-breakpoint-up(md) {
     padding: 1rem 3rem;
@@ -297,4 +297,8 @@
   margin: 0;
 
   @include fontSize(104);
+
+  @include media-breakpoint-down(sm) {
+      @include fontSize(72);
+  }
 }

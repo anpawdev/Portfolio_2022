@@ -116,6 +116,10 @@
   margin-left: 9rem;
   margin-top: 0.5rem;
 
+  @include media-breakpoint-down(lg) {
+    margin-left: 0;
+  }
+
   .contact-item {
     display: inline-block;
     color: $white;
