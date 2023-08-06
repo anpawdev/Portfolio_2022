@@ -1,0 +1,72 @@
+<div id="section5" data-anchor="page5" class="pp-scrollable title-white section section-5">
+  <div class="scroll-wrap">
+    <div class="bg-changer">
+      <div class="section-bg mask" style="background-image:url(../images/pictures/project-01.png);"></div>
+      <div class="section-bg mask" style="background-image:url(../images/pictures/project-02.png);"></div>
+      <div class="section-bg mask" style="background-image:url(../images/pictures/project-03.png);"></div>
+      <div class="section-bg mask" style="background-image:url(../images/pictures/project-04.png);"></div>
+    </div>
+    <div class="scrollable-content">
+      <div class="vertical-title d-none d-xl-block"><span>projekty</span></div>
+      <div class="vertical-centred">
+        <div class="boxed boxed-inner">
+          <div class="boxed">
+            <div class="container">
+              <div class="intro">
+                <div class="row">
+                  <div class="col-md-12">
+                    {% set projects = [
+                      {
+                        id: '01',
+                        title: 'Strona WP - dotacje ',
+                        technology: 'HTML, SCSS, JavaScript, PHP',
+                        link: 'single-project-1.html'
+                      },
+                      {
+                        id: '02',
+                        title: 'Blog - Wordpress',
+                        technology: 'JavaScript, PHP, ACF Pro, CPT',
+                        link: 'single-project-2.html'
+                      },
+                      {
+                        id: '03',
+                        title: 'Planer dzienny',
+                        technology: 'React.js, Redux, Styled-components',
+                        link: 'single-project-3.html'
+                      },
+                      {
+                        id: '04',
+                        title: 'Landing Page',
+                        technology: 'HTML, SCSS',
+                        link: 'single-project-4.html'
+                      }
+                    ]
+                    %}
+                    {% for project in projects %}
+                      {% set id = project.id %}
+                      {% set title = project.title %}
+                      {% set link = project.link %}
+                      {% set technology = project.technology %}
+                      <div class="project-row">
+                        <a href="{{link}}">
+                          <span class="project-number">{{id}}</span>
+                          <h2 class="project-title">{{title}}</h2>
+                          <div class="project-technology">{{technology}}</div>
+                        </a>
+                      </div>
+                    {% endfor %}          
+                    <div class="view-all view-all-projects">
+                      <a href="projects.html">
+                        Zobacz wszystkie projekty
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

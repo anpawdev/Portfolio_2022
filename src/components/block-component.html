@@ -1,0 +1,53 @@
+<div name="section2" data-anchor="page2" class="pp-scrollable section section-2">
+  <div class="scroll-wrap">
+    <div class="scrollable-content">
+      <div class="vertical-title d-none d-xl-block"><span>umiejętności</span></div>
+      <div class="vertical-centred">
+        <div class="boxed boxed-inner">
+          <div class="boxed">
+            <div class="container">
+              <div class="intro">
+                <h2 class="title mb-5 pb-5"> <span class="text-primary">Moje</span> umiejętności</h2>
+                <div class="row-specialization row">
+                  {% set blocks = [
+                    {
+                      name: 'mobile',
+                      title: 'Responsywny Design',
+                      description: 'Umiejętność wykorzystania rozwiązań takich jak Bootstrap, Tailwind CSS'
+                    },
+                    {
+                      name: 'coding',
+                      title: 'Programowanie',
+                      description: 'Znajomość języków programowania JavaScript, PHP, doświadczenie w pracy przy tworzeniu własnych motywów w Wordpress (ACF Pro, CPT)'
+                    },
+                    {
+                      name: 'tools',
+                      title: 'Narzędzia',
+                      description: 'Umiejętność korzystania z Figmy, Adobe XD, Git'
+                    }
+                  ]
+                  %}
+                  {% for block in blocks %}
+                    {% set name = block.name %}
+                    {% set title = block.title %}
+                    {% set description = block.description %}
+                    <div class="col-specialization col-md-6 col-lg-4">
+                      <img src="../images/icons/{{name}}.svg" alt="icon">
+                      <h4 class="text-uppercase">{{title}}</h4>
+                      <p>{{description}}</p>
+                    </div>
+                  {% endfor %}    
+                </div>
+                <div class="view-all">
+                  <a href="../cv/Pawlik_Anna_CV.pdf" download>
+                    Pobierz CV
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

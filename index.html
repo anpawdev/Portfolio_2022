@@ -9,404 +9,377 @@
   <title>
   Home
 </title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Jost:wght@300;400&family=Manrope:wght@400;500;600&family=Old+Standard+TT:wght@400;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js">
   <link rel="stylesheet" href="css/app.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
-  <div id="app">
-    
-  <header class="header">
-    <div class="container">
-        <div class="row">
-            <div class="header__heading col-xl-6 col-12 d-flex flex-column text-center text-xl-left" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="600">
-                <h1 class="h1 mb-3">Anna Pawlik <br> Junior
-                    <span data-period="2000" data-type="[&quot;Front End&quot;, &quot;Wordpress&quot;]" class="typewrite"><span class="wrap"></span></span> <br>Developer
-                  </h1>
-                <div class="mt-5 mx-xl-0 mx-auto">
-                    <a href="#about" class="header__btn">O mnie</a>
-                </div>
-            </div>
-            <div class="col-xl-6 col-12">
-                <div class="lottie" id="lottie"></div>
-            </div>
-            <div class="header__menu d-flex flex-xl-column align-items-center position-absolute">
-                <a href="https://www.linkedin.com/in/anna-pawlik-279509183/" target="_blank" rel="noopener">
-                    <img src="images/icons/linkedin-icon--menu.svg" alt>
-                </a>
-                <a href="https://github.com/anpawdev" target="_blank" rel="noopener">
-                    <img src="images/icons/github-icon--menu.svg" alt>
-                </a>
-                <a href="mailto:pawlikanna24@gmail.com">
-                    <img src="images/icons/email-icon--menu.svg" alt>
-                </a>
+  <div class="animsition">
+    <!-- <div class="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div> -->
+
+    <!-- Content CLick Capture-->
+
+    <div class="click-capture"></div>
+
+    <!-- Sidebar Menu-->
+
+    <div class="menu">
+    <span class="close-menu icon-cross2 right-boxed"></span>
+    <ul class="menu-list right-boxed">
+      <li data-menuanchor="page1">
+        <a href="#page1">Strona główna</a>
+      </li>
+      <li data-menuanchor="page2">
+        <a href="#page2">Specjalizacje</a>
+      </li>
+      <li data-menuanchor="page3">
+        <a href="#page3">O mnie</a>
+      </li>
+      <li data-menuanchor="page4">
+        <a href="#page4">Technologie</a>
+      </li>
+      <li data-menuanchor="page5">
+        <a href="#page5">Projekty</a>
+      </li>
+    </ul>
+    <div class="menu-footer right-boxed">
+      <div class="social-list">
+        <a href="" class="icon ion-social-linkedin">
+          <img src="images/icons/linkedin-icon.svg" alt="linkedin">
+        </a>
+        <a href="" class="icon ion-social-github">
+          <img src="images/icons/github-icon.svg" alt="github">
+        </a>
+      </div>
+      <div class="copy">© AP 2023. All Rights Reseverd</div>
+    </div>
+  </div>
+
+    <div class="copy-bottom white boxed">© AP 2023.</div>
+
+    <!-- Header-->
+    <div id="fullpage" class="pagepiling">
+      
+  <header class="navbar navbar-fullpage boxed">
+    <div class="navbar-bg"></div>
+    <div class="d-flex justify-content-between">
+        <div class="contacts">
+            <div class="contact-item">
+                <a href="mailto:pawlikanna24@gmail.com">pawlikanna24@gmail.com</a>
             </div>
         </div>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
     </div>
 </header>
-      <section class="section--image position-relative">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12" id="js-scene">
-                <div data-depth="0.45" data-title="hero">
-                    <img src="images/hero.jpg" class="img-fluid">
+  <div id="section1" data-anchor="page1" class="pp-scrollable text-white section section-1 slide">
+  <div class="scroll-wrap">
+    <!-- <div class="section-bg" style="background-image:url(../images/bg/main.jpg);"></div> -->
+    <div class="scrollable-content">
+      <div class="vertical-centred">
+        <div class="boxed boxed-inner">
+          <div class="boxed">
+            <div class="container">
+              <div class="intro">
+                <div class="row">
+                  <div class="col-8 col-md-9">
+                    <h1 class="display-2 text-white">
+                      <span class="text-primary">Anna Pawlik</span> Junior Wordpress Developer
+                    </h1>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-</section>
-  <section class="about mt-xl-0 mt-5" id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-12 position-relative">
-                <div class="border border--about text text--about mx-auto text-center">
-                    <h2>Kim jestem</h2>
-                </div>
-                <div class="about--text">
-                    <p>Od prawie 2 lat zajmuję się tworzeniem stron i wdrażaniem stron internetowych do CMS Wordpress. Dbam o atrakcyjny wygląd stron oraz
-                        poprawne wyświetlanie na różnych urządzeniach. Projekty wdrażam z AdobeXD oraz Figmy (pixel perfect).
-                        Zrealizowałam kilka komercyjnych projektów, również dla klientów zagranicznych. 
-                    </p>
-                </div>
-            </div>
-            <div class="col-12 d-flex justify-content-center d-xl-none mt-5">
-                <div class="about--btn text-uppercase text-white bg-black">
-                    <p>Technologie</p>
-                </div>
-            </div>
-            <div class="offset-xl-1 col-xl-5 col-12">
-                <ul class="nolist">
-                    <li><span class="line">HTML/Nunjucks</span> </li>
-                    <li><span class="line">React</span></li>
-                    <li><span class="line">CSS/SCSS</span></li>
-                    <li><span class="line">Wordpress</span></li>
-                    <li><span class="line">Bootstrap</span></li>
-                    <li><span class="line">PHP</span></li>
-                    <li><span class="line">JavaScript</span></li>
-                    <li><span class="line">MySQL</span></li>
-                    <li><span class="line">jQuery</span></li>
-                    <li><span class="line">GIT</span></li>
-                </ul>
-            </div>
-            <div class="col-6 justify-content-end d-none d-xl-flex">
-                <div class="about--btn text-uppercase text-white bg-black">
-                    <p>Technologie <img src="images/icons/arrow.svg" alt class="animated-arrow ml-2"></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-  <section class="section projects">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 position-relative mb-5">
-        <div class="border border--works text text--works mx-auto text-center position-relative">
-          <h2>Ostatnie projekty</h2>
+          </div>
         </div>
       </div>
-      <div class="d-flex flex-wrap justify-content-between mt-5">
-        
-        
-                <div class="projects__box col-md-6 col-12 d-flex flex-wrap mb-5" data-aos="fade-down"
-data-aos-easing="linear" data-aos-duration="500" data-aos-delay="100">
-    <div class="text-right">
-        <img src="images/pictures/project-11.png" alt class="img-fluid planner-image">
-        <div class="d-flex justify-content-between mt-4">
-            <div>
-                <a href="https://github.com/anpawdev/project" target="_blank" rel="noopener" class="mr-4">
-                    <img src="images/icons/github-icon--menu.svg" alt>
-                </a>
-                
-            </div>
-            <div>
-                <p class="line">Wdrożenie strony do Wordpress</p>
-                <p>HTML, SCSS, JavaScript, PHP</p>
-            </div>
-        </div>
     </div>
-</div>
-        
-        
-        
-        
-        
-        
-        <div class="projects__box col-md-6 col-12 d-flex flex-wrap mb-5" data-aos="fade-down"
-data-aos-easing="linear" data-aos-duration="500" data-aos-delay="100">
-    <div class="text-right">
-        <img src="images/pictures/project-1.png" alt class="img-fluid planner-image">
-        <div class="d-flex justify-content-between mt-4">
-            <div>
-                <a href="https://github.com/anpawdev/Page-WP" target="_blank" rel="noopener" class="mr-4">
-                    <img src="images/icons/github-icon--menu.svg" alt>
-                </a>
-                
-            </div>
-            <div>
-                <p class="line">Wdrożenie strony do Wordpress</p>
-                <p>HTML, CSS, JavaScript, PHP</p>
-            </div>
-        </div>
+    <div class="social-list social-list-bottom boxed position-absolute">
+      <a href="https://www.linkedin.com/in/anna-pawlik-279509183/" target="_blank" rel="nofollow noopener noreferrer" class="icon mx-4">
+        <img src="images/icons/linkedin-icon.svg" alt="social-icon">
+      </a>
+      <a href="https://github.com/anpawdev" target="_blank" rel="nofollow noopener noreferrer" alt="social-icon" class="mx-4">
+        <img src="images/icons/github-icon.svg" alt="github">
+      </a>
     </div>
+  </div>
 </div>
-        
-        
-        
-        
-        
-        
-        
-        <div class="projects__box col-md-6 col-12 d-flex flex-wrap mb-5" data-aos="fade-down"
-data-aos-easing="linear" data-aos-duration="500" data-aos-delay="200">
-    <div class="text-right">
-        <img src="images/pictures/project-2.png" alt class="img-fluid planner-image">
-        <div class="d-flex justify-content-between mt-4">
-            <div>
-                <a href="https://github.com/anpawdev/Daily-planner" target="_blank" rel="noopener" class="mr-4">
-                    <img src="images/icons/github-icon--menu.svg" alt>
-                </a>
-                
+  <div name="section2" data-anchor="page2" class="pp-scrollable section section-2">
+  <div class="scroll-wrap">
+    <div class="scrollable-content">
+      <div class="vertical-title d-none d-xl-block"><span>umiejętności</span></div>
+      <div class="vertical-centred">
+        <div class="boxed boxed-inner">
+          <div class="boxed">
+            <div class="container">
+              <div class="intro">
+                <h2 class="title mb-5 pb-5"> <span class="text-primary">Moje</span> umiejętności</h2>
+                <div class="row-specialization row">
+                  
+                  
+                    
+                    
+                    
+                    <div class="col-specialization col-md-6 col-lg-4">
+                      <img src="../images/icons/mobile.svg" alt="icon">
+                      <h4 class="text-uppercase">Responsywny Design</h4>
+                      <p>Umiejętność wykorzystania rozwiązań takich jak Bootstrap, Tailwind CSS</p>
+                    </div>
+                  
+                    
+                    
+                    
+                    <div class="col-specialization col-md-6 col-lg-4">
+                      <img src="../images/icons/coding.svg" alt="icon">
+                      <h4 class="text-uppercase">Programowanie</h4>
+                      <p>Znajomość języków programowania JavaScript, PHP, doświadczenie w pracy przy tworzeniu własnych motywów w Wordpress (ACF Pro, CPT)</p>
+                    </div>
+                  
+                    
+                    
+                    
+                    <div class="col-specialization col-md-6 col-lg-4">
+                      <img src="../images/icons/tools.svg" alt="icon">
+                      <h4 class="text-uppercase">Narzędzia</h4>
+                      <p>Umiejętność korzystania z Figmy, Adobe XD, Git</p>
+                    </div>
+                      
+                </div>
+                <div class="view-all">
+                  <a href="../cv/Pawlik_Anna_CV.pdf" download>
+                    Pobierz CV
+                  </a>
+                </div>
+              </div>
             </div>
-            <div>
-                <p class="line">Planner dzienny</p>
-                <p>React</p>
-            </div>
+          </div>
         </div>
-    </div>
-</div>
-        
-        
-        
-        
-        
-        
-        
-        <div class="projects__box col-md-6 col-12 d-flex flex-wrap mb-5" data-aos="fade-down"
-data-aos-easing="linear" data-aos-duration="500" data-aos-delay="400">
-    <div class="text-right">
-        <img src="images/pictures/project-3.png" alt class="img-fluid planner-image">
-        <div class="d-flex justify-content-between mt-4">
-            <div>
-                <a href="https://github.com/Johny1010/WDP-1909-01" target="_blank" rel="noopener" class="mr-4">
-                    <img src="images/icons/github-icon--menu.svg" alt>
-                </a>
-                
-            </div>
-            <div>
-                <p class="line">Projekt grupowy</p>
-                <p>Html, SCSS, JavaScript</p>
-            </div>
-        </div>
-    </div>
-</div>
-        
-        
-        
-        
-        
-        
-        
-        <div class="projects__box col-md-6 col-12 d-flex flex-wrap mb-5" data-aos="fade-down"
-data-aos-easing="linear" data-aos-duration="500" data-aos-delay="700">
-    <div class="text-right">
-        <img src="images/pictures/project-4.png" alt class="img-fluid planner-image">
-        <div class="d-flex justify-content-between mt-4">
-            <div>
-                <a href="https://github.com/anpawdev/Stack-MERN" target="_blank" rel="noopener" class="mr-4">
-                    <img src="images/icons/github-icon--menu.svg" alt>
-                </a>
-                
-            </div>
-            <div>
-                <p class="line">Blog</p>
-                <p>React, NodeJs, ExpressJs, MongoDB, Tailwind CSS</p>
-            </div>
-        </div>
-    </div>
-</div>
-        
-        
-        
-        
-        
-        
-        
-        <div class="projects__box col-md-6 col-12 d-flex flex-wrap mb-5" data-aos="fade-down"
-data-aos-easing="linear" data-aos-duration="500" data-aos-delay="1000">
-    <div class="text-right">
-        <img src="images/pictures/project-5.png" alt class="img-fluid planner-image">
-        <div class="d-flex justify-content-between mt-4">
-            <div>
-                <a href="https://github.com/anpawdev/Final_Project" target="_blank" rel="noopener" class="mr-4">
-                    <img src="images/icons/github-icon--menu.svg" alt>
-                </a>
-                
-            </div>
-            <div>
-                <p class="line">Sklep internetowy</p>
-                <p>Bootstrap, React, Redux</p>
-            </div>
-        </div>
-    </div>
-</div>
-        
-        
-        
-        
-        
-        
-        
-        <div class="projects__box col-md-6 col-12 d-flex flex-wrap mb-5" data-aos="fade-down"
-data-aos-easing="linear" data-aos-duration="500" data-aos-delay="1300">
-    <div class="text-right">
-        <img src="images/pictures/project-7.png" alt class="img-fluid planner-image">
-        <div class="d-flex justify-content-between mt-4">
-            <div>
-                <a href="https://github.com/anpawdev/Restaurant_Layout" target="_blank" rel="noopener" class="mr-4">
-                    <img src="images/icons/github-icon--menu.svg" alt>
-                </a>
-                
-            </div>
-            <div>
-                <p class="line">Projekt strony</p>
-                <p>Html, CSS, Bootstrap, JavaScript</p>
-            </div>
-        </div>
-    </div>
-</div>
-        
-        
-        
-        
-        
-        
-        
-        <div class="projects__box col-md-6 col-12 d-flex flex-wrap mb-5" data-aos="fade-down"
-data-aos-easing="linear" data-aos-duration="500" data-aos-delay="1600">
-    <div class="text-right">
-        <img src="images/pictures/project-6.png" alt class="img-fluid planner-image">
-        <div class="d-flex justify-content-between mt-4">
-            <div>
-                <a href="https://github.com/anpawdev/Travel_Project" target="_blank" rel="noopener" class="mr-4">
-                    <img src="images/icons/github-icon--menu.svg" alt>
-                </a>
-                
-            </div>
-            <div>
-                <p class="line">Projekt strony</p>
-                <p>Html, CSS, JavaScript</p>
-            </div>
-        </div>
-    </div>
-</div>
-        
-        
-        
-        
-        
-        
-        
-        <div class="projects__box col-md-6 col-12 d-flex flex-wrap mb-5" data-aos="fade-down"
-data-aos-easing="linear" data-aos-duration="500" data-aos-delay="1900">
-    <div class="text-right">
-        <img src="images/pictures/project-8.png" alt class="img-fluid planner-image">
-        <div class="d-flex justify-content-between mt-4">
-            <div>
-                <a href="https://github.com/anpawdev/Clipboard-landing-page" target="_blank" rel="noopener" class="mr-4">
-                    <img src="images/icons/github-icon--menu.svg" alt>
-                </a>
-                
-            </div>
-            <div>
-                <p class="line">Projekt strony</p>
-                <p>Html, SCSS</p>
-            </div>
-        </div>
-    </div>
-</div>
-        
-        
-        
-        
-        
-        
-        
-        <div class="projects__box col-md-6 col-12 d-flex flex-wrap mb-5" data-aos="fade-down"
-data-aos-easing="linear" data-aos-duration="500" data-aos-delay="2200">
-    <div class="text-right">
-        <img src="images/pictures/project-9.png" alt class="img-fluid planner-image">
-        <div class="d-flex justify-content-between mt-4">
-            <div>
-                <a href="https://github.com/anpawdev/Picture_perfect" target="_blank" rel="noopener" class="mr-4">
-                    <img src="images/icons/github-icon--menu.svg" alt>
-                </a>
-                
-            </div>
-            <div>
-                <p class="line">Projekt strony</p>
-                <p>Html, SCSS</p>
-            </div>
-        </div>
-    </div>
-</div>
-        
-        
-        
-        
-        
-        
-        
-        <div class="projects__box col-md-6 col-12 d-flex flex-wrap mb-5" data-aos="fade-down"
-data-aos-easing="linear" data-aos-duration="500" data-aos-delay="2300">
-    <div class="text-right">
-        <img src="images/pictures/admin.jpg" alt class="img-fluid planner-image">
-        <div class="d-flex justify-content-between mt-4">
-            <div>
-                <a href="https://github.com/anpawdev/Administration_panel" target="_blank" rel="noopener" class="mr-4">
-                    <img src="images/icons/github-icon--menu.svg" alt>
-                </a>
-                
-            </div>
-            <div>
-                <p class="line">Panel administracyjny</p>
-                <p>Html, SCSS, JavaScript</p>
-            </div>
-        </div>
-    </div>
-</div>
-        
       </div>
     </div>
   </div>
-</section>
-  <footer class="footer d-flex align-items-center">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-xl-4 col-6">
-                <a href="https://github.com/anpawdev" target="_blank" rel="noopener">
-                    <img src="images/icons/github-icon.svg" alt>
-                </a>
-                <a href="https://www.linkedin.com/in/anna-pawlik-279509183/" target="_blank" rel="noopener">
-                    <img src="images/icons/linkedin-icon.svg" alt>
-                </a>
-                <a href="mailto:pawlikanna24@gmail.com">
-                    <img src="images/icons/email-icon.svg" alt>
-                </a>
+</div>
+  <div id="section3" data-anchor="page3" class="pp-scrollable section section-4">
+  <div class="scroll-wrap">
+    <div class="section-bg bg-about"></div>
+    <div class="scrollable-content">
+      <div class="vertical-title text-white  d-none d-xl-block"><span>o mnie</span></div>
+      <div class="vertical-centred">
+        <div class="boxed boxed-inner">
+          <div class="boxed">
+            <div class="container">
+              <div class="intro">
+                <div class="row align-items-center">
+                  <div class="col-lg-6 offset-xl-1">
+                    <div class="experience-box">
+                      <div class="experience-content">
+                        <div class="experience-number">2</div>
+                        <div class="experience-info">
+                          <div>lata<br>doświadczenia</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 mt-5 mt-xl-0 text-white">
+                    <h2 class="title"> <span class="text-primary">Kim</span> jestem</h2>
+                    Zajmuję się tworzeniem stron internetowych z wykorzystaniem Wordpress. Na co dzień głównie pracuje z
+                    technologiami JavaScript i PHP. Świetnie odnajduję się w zespole. <br>Zależy mi na poznawaniu nowych technologii oraz nowoczesnych
+                    rozwiązań dlatego obecnie uczę się jak wykorzystać AI.
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-xl-8 col-6 text-grey text-right">
-                <p>© 2023 Anna Pawlik</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div src="section4" data-anchor="page4" class="pp-scrollable section section-6">
+    <div class="scroll-wrap">
+        <div class="scrollable-content">
+            <div class="vertical-title text-white d-none d-xl-block"><span>technologie</span></div>
+            <div class="vertical-centred">
+                <div class="boxed boxed-inner">
+                    <div class="boxed">
+                        <div class="container">
+                            <div class="intro">
+                                <h2 class="title text-white"><span class="text-primary">Znajomość </span>technologii</h2>
+                                <div class="row align-items-center row-techs">
+                                    
+                                      
+                                        
+                                        <div class="col-6 col-md-4 col-xl-3 col-tech mb-5">
+                                            <div class="tech-inner d-flex justify-content-center align-items-center">
+                                                <img alt="tech-logo" src="../images/icons/html.svg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                      
+                                        
+                                        <div class="col-6 col-md-4 col-xl-3 col-tech mb-5">
+                                            <div class="tech-inner d-flex justify-content-center align-items-center">
+                                                <img alt="tech-logo" src="../images/icons/css.svg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                      
+                                        
+                                        <div class="col-6 col-md-4 col-xl-3 col-tech mb-5">
+                                            <div class="tech-inner d-flex justify-content-center align-items-center">
+                                                <img alt="tech-logo" src="../images/icons/sass.svg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                      
+                                        
+                                        <div class="col-6 col-md-4 col-xl-3 col-tech mb-5">
+                                            <div class="tech-inner d-flex justify-content-center align-items-center">
+                                                <img alt="tech-logo" src="../images/icons/bootstrap.svg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                      
+                                        
+                                        <div class="col-6 col-md-4 col-xl-3 col-tech mb-5">
+                                            <div class="tech-inner d-flex justify-content-center align-items-center">
+                                                <img alt="tech-logo" src="../images/icons/tailwind.svg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                      
+                                        
+                                        <div class="col-6 col-md-4 col-xl-3 col-tech mb-5">
+                                            <div class="tech-inner d-flex justify-content-center align-items-center">
+                                                <img alt="tech-logo" src="../images/icons/js.svg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                      
+                                        
+                                        <div class="col-6 col-md-4 col-xl-3 col-tech mb-5">
+                                            <div class="tech-inner d-flex justify-content-center align-items-center">
+                                                <img alt="tech-logo" src="../images/icons/jquery.svg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                      
+                                        
+                                        <div class="col-6 col-md-4 col-xl-3 col-tech mb-5">
+                                            <div class="tech-inner d-flex justify-content-center align-items-center">
+                                                <img alt="tech-logo" src="../images/icons/wp.svg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                      
+                                        
+                                        <div class="col-6 col-md-4 col-xl-3 col-tech mb-5">
+                                            <div class="tech-inner d-flex justify-content-center align-items-center">
+                                                <img alt="tech-logo" src="../images/icons/php.svg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                      
+                                        
+                                        <div class="col-6 col-md-4 col-xl-3 col-tech mb-5">
+                                            <div class="tech-inner d-flex justify-content-center align-items-center">
+                                                <img alt="tech-logo" src="../images/icons/git.svg" class="img-fluid">
+                                            </div>
+                                        </div>
+                                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</footer>
+</div>
+  <div id="section5" data-anchor="page5" class="pp-scrollable title-white section section-5">
+  <div class="scroll-wrap">
+    <div class="bg-changer">
+      <div class="section-bg mask" style="background-image:url(../images/pictures/project-01.png);"></div>
+      <div class="section-bg mask" style="background-image:url(../images/pictures/project-02.png);"></div>
+      <div class="section-bg mask" style="background-image:url(../images/pictures/project-03.png);"></div>
+      <div class="section-bg mask" style="background-image:url(../images/pictures/project-04.png);"></div>
+    </div>
+    <div class="scrollable-content">
+      <div class="vertical-title d-none d-xl-block"><span>projekty</span></div>
+      <div class="vertical-centred">
+        <div class="boxed boxed-inner">
+          <div class="boxed">
+            <div class="container">
+              <div class="intro">
+                <div class="row">
+                  <div class="col-md-12">
+                    
+                    
+                      
+                      
+                      
+                      
+                      <div class="project-row">
+                        <a href="single-project-1.html">
+                          <span class="project-number">01</span>
+                          <h2 class="project-title">Strona WP - dotacje </h2>
+                          <div class="project-technology">HTML, SCSS, JavaScript, PHP</div>
+                        </a>
+                      </div>
+                    
+                      
+                      
+                      
+                      
+                      <div class="project-row">
+                        <a href="single-project-2.html">
+                          <span class="project-number">02</span>
+                          <h2 class="project-title">Blog - Wordpress</h2>
+                          <div class="project-technology">JavaScript, PHP, ACF Pro, CPT</div>
+                        </a>
+                      </div>
+                    
+                      
+                      
+                      
+                      
+                      <div class="project-row">
+                        <a href="single-project-3.html">
+                          <span class="project-number">03</span>
+                          <h2 class="project-title">Planer dzienny</h2>
+                          <div class="project-technology">React.js, Redux, Styled-components</div>
+                        </a>
+                      </div>
+                    
+                      
+                      
+                      
+                      
+                      <div class="project-row">
+                        <a href="single-project-4.html">
+                          <span class="project-number">04</span>
+                          <h2 class="project-title">Landing Page</h2>
+                          <div class="project-technology">HTML, SCSS</div>
+                        </a>
+                      </div>
+                              
+                    <div class="view-all view-all-projects">
+                      <a href="projects.html">
+                        Zobacz wszystkie projekty
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
 
   </div>
 

@@ -1,0 +1,61 @@
+<div src="section4" data-anchor="page4" class="pp-scrollable section section-6">
+    <div class="scroll-wrap">
+        <div class="scrollable-content">
+            <div class="vertical-title text-white d-none d-xl-block"><span>technologie</span></div>
+            <div class="vertical-centred">
+                <div class="boxed boxed-inner">
+                    <div class="boxed">
+                        <div class="container">
+                            <div class="intro">
+                                <h2 class="title text-white"><span class="text-primary">Znajomość </span>technologii</h2>
+                                <div class="row align-items-center row-techs">
+                                    {% set images = [
+                                        {
+                                          src: '../images/icons/html.svg'
+                                        },
+                                        {
+                                          src: '../images/icons/css.svg'
+                                        },
+                                        {
+                                          src: '../images/icons/sass.svg'
+                                        },
+                                        {
+                                          src: '../images/icons/bootstrap.svg'
+                                        },
+                                        {
+                                          src: '../images/icons/tailwind.svg'
+                                        },
+                                        {
+                                          src: '../images/icons/js.svg'
+                                        },
+                                        {
+                                          src: '../images/icons/jquery.svg'
+                                        },
+                                        {
+                                          src: '../images/icons/wp.svg'
+                                        },
+                                        {
+                                          src: '../images/icons/php.svg'
+                                        },
+                                        {
+                                          src: '../images/icons/git.svg'
+                                        }
+                                      ]
+                                      %}
+                                      {% for image in images %}
+                                        {% set src = image.src %}
+                                        <div class="col-6 col-md-4 col-xl-3 col-tech mb-5">
+                                            <div class="tech-inner d-flex justify-content-center align-items-center">
+                                                <img alt="tech-logo" src="{{src}}" class="img-fluid">
+                                            </div>
+                                        </div>
+                                      {% endfor %} 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

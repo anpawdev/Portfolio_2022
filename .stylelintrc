@@ -1,0 +1,10 @@
+{
+  "extends": "@tonik/stylelint-config-scss",
+  "rules": {
+    "indentation": 2,
+    "order/properties-order": null,
+    "selector-pseudo-class-no-unknown": null,
+    "selector-class-pattern": null,
+    "selector-no-qualifying-type": null
+  }
+}

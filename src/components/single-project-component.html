@@ -1,0 +1,22 @@
+<div class="projects__box col-md-6 col-12 d-flex flex-wrap mb-5" data-aos="fade-down"
+data-aos-easing="linear" data-aos-duration="500" data-aos-delay="{{delay}}">
+    <div class="text-right">
+        <img src="images/pictures/project-{{id}}.png" alt class="img-fluid planner-image">
+        <div class="d-flex justify-content-between mt-4">
+            <div>
+                <a href="{{link}}" target="_blank" rel="noopener" class="mr-4">
+                    <img src="images/icons/github-icon--menu.svg" alt>
+                </a>
+                {% if website | length %}
+                <a href="{{website}}" target="_blank" rel="noopener">
+                    <img src="images/icons/globe.svg" alt>
+                </a>
+                {% endif %}
+            </div>
+            <div>
+                <p class="line">{{title}}</p>
+                <p>{{tech}}</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>{% block title %}{% endblock %}</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <div class="animsition">
+    <!-- Sidebar Menu-->
+
+    {% include 'components/sidebar-menu.html' %}
+
+    <!-- Header -->
+
+    {% include 'components/header.html' %}
+
+    <div id="fullpage" class="pagepiling">
+      <div id="section1" data-anchor="page1" class="pp-scrollable title-white section section-1">
+        <div class="scroll-wrap">
+          <div class="scrollable-content">
+            <div class="vertical-title d-none d-xl-block"><span>projekty</span></div>
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                      <div class="row">
+                        <div class="col-md-12">
+                          {% set projects = [
+                          {
+                          id: '01',
+                          title: 'Strona WP - dotacje ',
+                          technology: 'HTML, SCSS, JavaScript, PHP',
+                          link: 'single-project-1.html'
+                          },
+                          {
+                          id: '02',
+                          title: 'Blog - Wordpress',
+                          technology: 'JavaScript, PHP, ACF Pro, CPT',
+                          link: 'single-project-2.html'
+                          },
+                          {
+                          id: '03',
+                          title: 'Planer dzienny',
+                          technology: 'React.js, Redux, Styled-components',
+                          link: 'single-project-3.html'
+                          },
+                          {
+                          id: '04',
+                          title: 'Landing Page',
+                          technology: 'HTML, SCSS',
+                          link: 'single-project-4.html'
+                          }
+                          ]
+                          %}
+                          {% for project in projects %}
+                          {% set id = project.id %}
+                          {% set title = project.title %}
+                          {% set link = project.link %}
+                          {% set technology = project.technology %}
+                          <div class="project-row">
+                            <a href="{{link}}">
+                              <span class="project-number">{{id}}</span>
+                              <h2 class="project-title">{{title}}</h2>
+                              <div class="project-technology">{{technology}}</div>
+                            </a>
+                          </div>
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="section2" data-anchor="page2" class="pp-scrollable title-white section section-3">
+        <div class="scroll-wrap">
+          <div class="scrollable-content">
+            <div class="vertical-title d-none d-xl-block"><span>projekty</span></div>
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                      <div class="row">
+                        <div class="col-md-12">
+                          {% set projects = [
+                          {
+                          id: '05',
+                          title: 'Projekt grupowy',
+                          technology: 'HTML, SCSS, JavaScript',
+                          link: 'single-project-5.html'
+                          },
+                          {
+                          id: '06',
+                          title: 'Sklep internetowy',
+                          technology: 'Bootstrap, React, Redux',
+                          link: 'single-project-6.html'
+                          },
+                          {
+                          id: '07',
+                          title: 'Projekt strony restauracja',
+                          technology: 'HTML, CSS, Bootstrap, JavaScript',
+                          link: 'single-project-7.html'
+                          },
+                          {
+                          id: '08',
+                          title: 'Panel administracyjny',
+                          technology: 'HTML, SCSS, JavaScript',
+                          link: 'single-project-8.html'
+                          }
+                          ]
+                          %}
+                          {% for project in projects %}
+                          {% set id = project.id %}
+                          {% set title = project.title %}
+                          {% set link = project.link %}
+                          {% set technology = project.technology %}
+                          <div class="project-row">
+                            <a href="{{link}}">
+                              <span class="project-number">{{id}}</span>
+                              <h2 class="project-title">{{title}}</h2>
+                              <div class="project-technology">{{technology}}</div>
+                            </a>
+                          </div>
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>

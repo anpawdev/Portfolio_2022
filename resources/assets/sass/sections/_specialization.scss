@@ -1,0 +1,26 @@
+.section-2 {
+  background-color: #f7f6f6 !important;
+
+  h2,
+  h4,
+  a,
+  p {
+    color: $text !important;
+  }
+
+  a:hover {
+    color: $pink !important;
+  }
+
+  .view-all a::before {
+    background: $text;
+  }
+}
+
+.row-specialization {
+  margin: 0 -2rem;
+}
+
+.col-specialization {
+  padding: 0 2rem;
+}

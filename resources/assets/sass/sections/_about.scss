@@ -1,0 +1,71 @@
+.experience {
+  &-box {
+    display: inline-block;
+    font-weight: 300;
+    position: relative;
+    white-space: nowrap;
+    padding: 3.75rem;
+    border: 1px solid $white;
+  }
+
+  &-border {
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20.15rem;
+    height: 41.15rem;
+    border: 0.657rem solid $yellow;
+    left: 5rem;
+    top: -2rem;
+  }
+
+  &-content {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+  }
+
+  &-number {
+    font-family: $secondfont;
+    line-height: 1;
+    font-weight: 400;
+    color: $white;
+
+    @include fontSize(370);
+  }
+
+  &-info {
+    position: relative;
+    line-height: 1.481;
+    color: $white;
+    text-align: right;
+
+    @include fontSize(20);
+
+    @include media-breakpoint-down(sm) {
+      margin-top: -1px;
+    }
+
+    div {
+      display: inline-block;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        right: 100%;
+        content: "";
+        width: 4.5rem;
+        bottom: 0.8rem;
+        height: 1px;
+        background: $white;
+        margin-right: 0.75rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .section-about {
+    padding-top: 12rem;
+  }
+}

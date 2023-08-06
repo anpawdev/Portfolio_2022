@@ -1,0 +1,140 @@
+.navbar {
+  position: absolute;
+  display: block;
+  z-index: 101;
+  right: 0;
+  top: 0;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: $white;
+  margin: 0;
+  border-radius: 0;
+
+  @include media-breakpoint-down(md) {
+    padding: 2.7rem 0;
+  }
+
+  &-bg {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -1px;
+    width: 100%;
+    height: 0;
+    background: $darkgrey;
+    z-index: -1;
+    box-shadow: none;
+    transition: all 0.3s cubic-bezier(0.37, 0.31, 0.2, 0.85);
+  }
+
+  &-fixed {
+    position: fixed;
+  }
+
+  &-fixed .navbar-bg {
+    height: 100%;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.2);
+  }
+
+  &-toggle {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background: none;
+    border: 0;
+    margin-top: 0.8rem;
+
+    &:hover .icon-bar {
+      background-color: $pink;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    .icon-bar {
+      background-color: $white;
+      transition: all 0.3s ease;
+      display: block;
+      width: 22px;
+      height: 2px;
+      border-radius: 1px;
+
+      & + .icon-bar {
+        margin-top: 4px;
+      }
+    }
+  }
+
+  .social-list {
+    overflow: hidden;
+    margin-right: 10%;
+
+    &-bottom {
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      bottom: 2.4rem;
+      color: $black;
+    }
+
+    a {
+      line-height: 1;
+      color: $white;
+      margin-left: 2rem;
+
+      @include fontSize(22);
+
+      &:hover {
+        color: $pink;
+        text-decoration: none;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &-spacer {
+    margin: -1rem 4.5rem 0;
+    width: 1px;
+    height: 3.3rem;
+    background-color: #3c3c3c;
+  }
+
+  &-address {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+.contacts {
+  margin-left: 9rem;
+  margin-top: 0.5rem;
+
+  @include media-breakpoint-down(lg) {
+    margin-left: 0;
+  }
+
+  .contact-item {
+    display: inline-block;
+    color: $white;
+    margin-right: 2rem;
+
+    a {
+      color: $white;
+    }
+
+    &.spacer {
+      opacity: 0.3;
+    }
+  }
+}
+
+.contact-address {
+  margin-top: 5rem;
+}
