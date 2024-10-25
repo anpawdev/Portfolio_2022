@@ -299,6 +299,6 @@
   @include fontSize(104);
 
   @include media-breakpoint-down(sm) {
-      @include fontSize(72);
+    @include fontSize(72);
   }
 }
